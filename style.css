@@ -1,0 +1,122 @@
+body {
+    font-family: 'Sono', sans-serif;
+    background-image: url('./images/library.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Sono', sans-serif;
+    margin: 0;
+    backdrop-filter: blur(5px);
+}
+  .pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+  }
+  .pricing-plan{
+    flex-basis: 400px;
+    background-color: #FAF9F6;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .plan-title{
+    padding: 10px ;
+    color: #a3805d;
+    font-size: 24px;
+    background-color: #483c30;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .plan-price{
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .plan-features li {
+    margin-bottom: 20px;
+  }
+
+  .plan-button{
+    background-color: #483c30;
+    color: #a3805d;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+
+ @media (min-width:319px) and (max-width:480px){
+  .pricing-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    gap: 20px;
+  }
+  .pricing-plan{
+    flex-basis: 100px;
+    width: 80%;
+  }
+  .plan-title{
+    font-size: 20px;
+  }
+  .plan-price{
+    font-size: 1.5rem;
+  }
+  .plan-features{
+    font-size: 1rem;
+  } 
+ }
+
+ @media (min-width:481px) and (max-width:1200px) {
+  .pricing-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    gap: 20px;
+  }
+  .pricing-plan{
+    flex-basis: 50px;
+    width: 80%;
+  }
+  .plan-title{
+    font-size: 35px;
+  }
+  .plan-price{
+    font-size: 2rem;
+  }
+  .plan-features{
+    font-size: 1.5rem;
+  } 
+ }
+
+ @media (min-width:1201px) and (max-width:1600px){
+  .pricing-container{
+    display: flex;
+    margin-right: 15px;
+    gap: 20px;
+  }
+  .pricing-plan{
+    flex-basis: 300px;
+    width: 80%;
+  }
+  .plan-title{
+    font-size: 35px;
+  }
+  .plan-price{
+    font-size: 2rem;
+  }
+  .plan-features{
+    font-size: 1.5rem;
+  } 
+ }
